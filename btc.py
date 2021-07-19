@@ -10,5 +10,6 @@ async def _(event):
         return
        
     r=requests.get('https://blockchain.info/ru/ticker').json()["RUB"]["buy"]
+    d=requests.get('https://blockchain.info/ru/ticker').json()["USD"]["buy"]
     await event.edit(f"""**BITCOIN**
-1 ```BTC```: {r}₽""")
+1 ```BTC```: {r}₽ / {d}$""")
