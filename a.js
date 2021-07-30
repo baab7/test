@@ -1,1 +1,1 @@
-<script>alert()</sciprt>
+alert()
